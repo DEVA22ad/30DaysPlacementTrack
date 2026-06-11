@@ -1,0 +1,11 @@
+const students = [ { id: 1, name: "Arun", mark: 85 }, { id: 2, name: "Karthik", mark: 45 }, { id: 3, name: "Vijay", mark: 92 }, { id: 4, name: "Ajay", mark: 35 } ];
+const studentNames = students.map(student => student.name);
+console.log(studentNames);
+const passedStudents=students.filter(student => student.mark >= 50);
+console.log(passedStudents);
+const studentFind=students.find(student => student.id === 3);
+console.log(studentFind.name);
+const totalMarks = students.reduce((total, student) => total + student.mark, 0);
+console.log(totalMarks);
+const studentAvgmarks=students.reduce((total, student) => total + student.mark, 0) / students.length;
+console.log(studentAvgmarks);
