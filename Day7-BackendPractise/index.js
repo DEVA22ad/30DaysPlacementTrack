@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
-import userRoute from './routes/usersRoute.js'
+import userRoute from './routes/authRoute.js'
 
 dotenv.config()
 
@@ -12,7 +12,7 @@ app.use(express.json())
 
 const PORT = process.env.PORT || 3000
 
-app.use('/api/users',userRoute)
+app.use('/api/auth',userRoute)
 
 
 
