@@ -60,7 +60,8 @@ catch (error) {
 export const getbyId = (req,res)=>{
 
 
-    console.log(req);
+    const {user_id} = req.params;
+    
     
 
 }
